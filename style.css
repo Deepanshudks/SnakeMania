@@ -4,7 +4,7 @@
     margin: 0;
 }
 .container{
-    background: url('https://wallpapers.com/images/high/cute-snake-game-character-8m6scx5j8ivp9lcv.webp');
+    background: url(https://wallpapers.com/images/high/cute-snake-game-character-8m6scx5j8ivp9lcv.webp);
     min-height: 100vh;
    background-size: 100vw 100vh;
    background-repeat: no-repeat;
