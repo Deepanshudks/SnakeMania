@@ -1,0 +1,176 @@
+@import url('https://fonts.googleapis.com/css2?family=New+Tegomin&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.container {
+    background: url("https://wallpaperaccess.com/full/8552473.jpg")no-repeat center center/cover;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 400px;
+}
+
+#board {
+    background: linear-gradient(rgb(244 255 154 / 98%), #7bffe0fc);
+    height: 92vh;
+    width: 90vh;
+    border: 2px solid black;
+    border-radius: 5px;
+    display: grid;
+    grid-template-columns: repeat(30, 1fr);
+    grid-template-rows: repeat(30, 1fr);
+}
+
+#score {
+    position: absolute;
+    top: 15px;
+    right: 90px;
+    font-size: 40px;
+    font-weight: bold;
+    font-family: "New Tegomin", serif;
+}
+
+#hiscoreBox {
+    position: absolute;
+    top: 65px;
+    right: 80px;
+    font-size: 1.7rem;
+    font-weight: bold;
+    font-family: "New Tegomin", serif;
+}
+
+#btn {
+    position: absolute;
+    top: 114px;
+    right: 90px;
+    font-size: 1.1rem;
+    border: 1px solid black;
+    border-radius: 9px;
+    width: 65px;
+    background-color: #00c4ff;
+    color: black;
+    height: 29px;
+    cursor: pointer;
+    font-weight: bold;
+    font-family: 'Courier New', Courier, monospace
+}
+
+.head {
+    background: linear-gradient(red, purple);
+    border-radius: 8px;
+    transform: scale(1.15);
+}
+
+.snake {
+    background: linear-gradient(blue, green);
+    border: .25vmin solid white;
+    border-radius: 12px;
+}
+
+.food {
+    background: linear-gradient(purple, rgb(48, 175, 56));
+    border-radius: 50%;
+    border: 1px solid black;
+}
+
+#footer {
+    padding-top: 95vh;
+    text-align: center;
+
+
+
+    color: rgb(210, 174, 131);
+}
+
+@media only screen and (max-width: 768px) {
+
+    .container {
+        padding-left: 200px;
+    }
+
+    .text {
+        padding-left: 100px;
+        font-size: 11px;
+    }
+
+    #score {
+        font-size: 18px;
+        margin: 0px -61px;
+    }
+
+    #board {
+        min-width: 95vh;
+    }
+
+    #hiscoreBox {
+        font-size: 14px;
+        top: 36px;
+        margin: 0px -61px;
+    }
+
+    #footer {
+        font-size: 12px;
+    }
+}
+
+@media only screen and (max-width: 425px) {
+    .container {
+        height: 92vh;
+        width: 134vh;
+    }
+
+    #score {
+        right: 360px;
+        font-size: 12px;
+        color: white;
+    }
+
+    #hiscoreBox {
+        right: 348px;
+        font-size: 12px;
+        color: white;
+    }
+
+    .text {
+
+        padding-left: 1px;
+        font-size: 6px;
+
+    }
+}
+
+@media screen and (max-width:980px) {
+    .container {
+        padding-left: 114px;
+    }
+}
+
+@media only screen and (max-width: 320px) {
+    .container {
+        padding-left: 54px;
+    }
+
+
+#score {
+    right: 317px;
+    font-size: 12px;
+    color: white;
+}
+
+#hiscoreBox {
+    right: 305px;
+    font-size: 10px;
+    color: white;
+}
+
+.text {
+
+    padding-left: 1px;
+    font-size: 6px;
+
+}
+}
